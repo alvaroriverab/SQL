@@ -1,9 +1,0 @@
--- Display results with pairs of variables conciding in 2 of a group of 3 tables, but not on all 3 tables at the same time.
-
-SELECT title,first_name,last_name
-FROM film_actor INNER JOIN actor
-ON film_actor.actor_id = actor.actor_id
-INNER JOIN film
-ON film_actor.film_id = film.film_id
-WHERE first_name = 'Nick'
-AND last_name = 'Wahlberg'
